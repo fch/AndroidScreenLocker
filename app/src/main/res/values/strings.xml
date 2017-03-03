@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lock Screen</string>
+    <string name="desc_enable_admin">Admin Privilege is need to lock the phone</string>
+
+</resources>
