@@ -20,6 +20,7 @@ package com.example.chflo.test2;
  */
 
 import android.app.Activity;
+import android.app.admin.DeviceAdminReceiver;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -30,14 +31,13 @@ import android.util.Log;
 public class MainActivity extends Activity {
 
     final static int ENABLE_ADMIN = 1;
-    final static int SUCCESS = -1;
 
     private ComponentName mAdminName = null;
 
     public final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mAdminName = new ComponentName(this, AdminManageReceiver.class);
+        mAdminName = new ComponentName(this, DeviceAdminReceiver.class);
         DevicePolicyManager mDPM = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
 
         /*
