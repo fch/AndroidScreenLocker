@@ -1,6 +1,6 @@
 # AndroidScreenLocker
 A simple android app that locks the device via software.
 
-minSdkLevel: 16
+minSdkLevel: 16 (Android 4.1 Jelly Bean)
 
-the app maybe asks for some administrator priviliges, which are necessary unfortunately
+In some cases, the app will ask for certain administrator priviliges, which are necessary to lock the phone.
